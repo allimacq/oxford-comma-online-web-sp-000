@@ -1,5 +1,6 @@
 def oxford_comma(array)
-  new = array.
+  new = array.insert(-2, "and")
+  puts new
 end
 
 
