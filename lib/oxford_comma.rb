@@ -1,7 +1,12 @@
 def oxford_comma(array)
-  new = array.insert(-2, "and")
-  final = new.join()
-  puts final
+  if array.length() < 1
+    new = array.join()
+    return new
+  elsif array.length > 1 && array.length < 6
+    new = array.insert(-2, "and")
+    final = new.join()
+    puts final
+  end
 end
 
 
