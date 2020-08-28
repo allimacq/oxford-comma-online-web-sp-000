@@ -6,10 +6,6 @@ def oxford_comma(array)
     new = array.insert(-2, " and")
     final = new.join(", ")
     final[/\W\sand\W/] = " and"
-    puts final
+    return final
   end
 end
-
-
-
-#do length -1 and then add the last one by adding and before it  
