@@ -2,12 +2,13 @@ def oxford_comma(array)
   i = 0
   new = Array.new()
   length = array.length()
-  while i < 5
-    if i < array.length 
-      new = array.join(", ")
-      puts new
-      i += 1
-      puts "#{i} WANT TO KNOW WHERE I AM"
+  loop do
+    new = array.join(", ")
+    puts new
+    i += 1
+    puts "#{i} WANT TO KNOW WHERE I AM"
+    if i == length
+      break
     end
   end
 end
